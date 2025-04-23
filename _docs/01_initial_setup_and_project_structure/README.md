@@ -91,7 +91,10 @@ dotenv environment variable files
 ```
 
 ### 2) .env.example와 .env 파일 생성
-`.env.example` 파일은 프로젝트에 필요한 환경 변수의 구조를 공유하기 위한 템플릿
+- `.env.example` 파일은 프로젝트에 필요한 환경 변수의 구조를 공유하기 위한 템플릿
 이 파일을 복사하여 `.env` 파일을 만들고 실제 환경에 맞는 값으로 수정하여 사용
     - `.env` : 커밋 추적되지 않음 (Git에 의해 무시됨)
     - `.env.example` : 커밋 추적됨 (저장소에 올라감)
+
+## 5. ConfigModule 설정
+- `app.module.ts` 파일에 환경 변수를 사용하기 위한 ConfigModule을 설정

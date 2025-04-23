@@ -1,3 +1,9 @@
+# 문제상황 해결
+
+- [Node 버전 올려주기](#node-버전-올려주기)
+- [Delete `cr` eslint prettier/prettier module](#delete-cr-eslint-prettierprettier-module)
+
+------
 
 ## Node 버전 올려주기
 ![Image](https://github.com/user-attachments/assets/30b3104f-5b02-4227-9951-9b735d7de4a2)
@@ -13,3 +19,22 @@
 ![Image](https://github.com/user-attachments/assets/e3994f3c-c773-4658-a010-152d86cd5a9c)
 
 </details>
+
+## Delete `cr` eslint prettier/prettier module 
+
+![Image](https://github.com/user-attachments/assets/2f818165-90f4-4141-9744-ea43ef5a572b)
+
+### 1. .prettierrc 파일
+```
+{
+  "endOfLine": "auto"
+}
+```
+
+### 2. `.eslintrc.js` 파일
+```
+rules: {
+  'prettier/prettier': ['error', { endOfLine: 'auto' }],
+}
+```
+- 이후 ctrl + s 로 저장하면 해결됨
