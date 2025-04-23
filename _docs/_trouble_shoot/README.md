@@ -52,7 +52,14 @@ rules: {
 - 현재 `@nestjs/config`의 ConfigModule과 내가 로컬에서 만든 ConfigModule 이름이 같아서 발생
 
 ### 1. 로컬에서 만든 모듈의 이름을 변경
-### 2. @nestjs/config의 ConfigModule을 import할 때 이름을 변경
+- `config.module.ts` => `app.config.module.ts`
+- `ConfigModule` => `AppConfigModule`
 
-## Conflicting peer dependency: @typescript-eslint/parser@7.18.0 peer @typescript-eslint/parser@"^7.0.0" 
-![Image](https://github.com/user-attachments/assets/07750fd4-7d7e-4e78-ba6d-d1638c3ec7e0)
+### 2. @nestjs/config의 ConfigModule을 import할 때 이름을 변경
+```
+import {
+  ConfigModule as NestJSConfigModule,
+  ConfigService,
+} from '@nestjs/config';
+```
+

@@ -9,7 +9,7 @@ import configuration from './configuration';
   imports: [
     NestJSConfigModule.forRoot({
       load: [configuration],
-      validationSchema: configuration,
+      validationSchema: configuration(),
       validationOptions: {
         abortEarly: false,
       },
