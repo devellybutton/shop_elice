@@ -16,5 +16,6 @@ import configuration from './configuration';
     }),
   ],
   providers: [ConfigService],
+  exports: [ConfigService]
 })
 export class ConfigModule {}

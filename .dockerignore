@@ -17,3 +17,6 @@ Dockerfile
 README.md
 .eslintrc.js
 nodemon.json
+*/_references
+*/_docs
+.env.example
