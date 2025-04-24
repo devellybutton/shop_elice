@@ -21,6 +21,7 @@
 - NestJS CLI를 활용한 프로젝트 생성
 - 필요한 패키지 설치
 - 환경변수 설정 (.env, .env.example)
+- ConfigModule 설정
 
 ### [2. Docker 컨테이너화](./_docs/02_docker_containerization/README.md)
 - Dockerfile과 docker-compose.yml 파일
